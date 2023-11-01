@@ -5,7 +5,7 @@
 </div>
 
 # 📗 Table of Contents
-- [📖 About the Project](#about-project)
+- [📖 About the Project](#CineScope)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [💻 Getting Started](#getting-started)
