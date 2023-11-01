@@ -3,7 +3,7 @@ import Filter from './Filter'
 
 const SideBar = () => {
   return (
-    <div className='ui visible left four wide sidebar'>
+    <div className='uileft four wide sidebar'>
       {/* <Filter /> */}
         <a class="item">
             Trending

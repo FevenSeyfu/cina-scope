@@ -11,7 +11,7 @@
 - [💻 Getting Started](#getting-started)
     - [Installation](#installation)
     - [Usage](#usage)
-- [👥 Authors](#authors)
+- [👥 Author](#authors)
 - [Contributions](#contributions)
 - [License](#license)
 
