@@ -1,14 +1,16 @@
 import React from 'react'
+import '../../Assets/css/MovieCard.css'
 import { Rating,Card,Image } from 'semantic-ui-react'
+
 import image1 from '../../Assets/images/avatar 1.jpg'
 import image2 from '../../Assets/images/avatar 2.jpg'
 
 const MovieCard = () => {
   return (
-    <Card.Group itemsPerRow={4} className='centered stackable'>
-      <Card>
+    <Card.Group itemsPerRow={4} className='centered stackable card-group'>
+      <Card className='movie-card'>
         <Image src={image1} wrapped ui={false} />
-        <Card.Content>
+        <Card.Content className='card-content'>
           <Card.Header>Movie Title</Card.Header>
           <Card.Meta>Release date</Card.Meta>
         </Card.Content>
@@ -18,7 +20,7 @@ const MovieCard = () => {
         </Card.Content>
       </Card>
 
-      <Card>
+      <Card className='movie-card'>
         <Image src={image2} wrapped ui={false} />
         <Card.Content>
           <Card.Header>Movie Title</Card.Header>
@@ -29,8 +31,9 @@ const MovieCard = () => {
             <Rating icon='star' defaultRating={3} maxRating={5} />
         </Card.Content>
       </Card>
-      
+
     </Card.Group>
+
   )
 }
 
