@@ -8,7 +8,7 @@ import image2 from '../../Assets/images/avatar 2.jpg'
 const MovieCard = () => {
   return (
     <>
-        <Card className='movie-card'>
+        <Card className='movie-card centered'>
           <Image src={image1} wrapped ui={false} />
           <Card.Content className='card-content'>
             <Card.Header>Movie Title</Card.Header>

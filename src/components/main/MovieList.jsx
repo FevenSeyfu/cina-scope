@@ -5,7 +5,7 @@ import {Card,Pagination } from 'semantic-ui-react'
 const MovieList = () => {
   return (
      <div>
-        <Card.Group itemsPerRow={4} className='centered stackable card-group'>
+        <Card.Group itemsPerRow={4} className='ui centered stackable card-group'>
           <MovieCard />
         </Card.Group>
         <Pagination 
