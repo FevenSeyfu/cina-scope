@@ -4,7 +4,6 @@ import MovieCard from './MovieCard'
 const MovieList = () => {
   return (
     <div className='ui segment twelve wide column'>
-      MovieList
       <MovieCard />
     </div>
   )

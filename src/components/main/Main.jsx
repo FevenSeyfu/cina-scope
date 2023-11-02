@@ -6,7 +6,7 @@ import Pagination from './Pagination'
 const Main = () => {
   return (
     <div className='main ui container'>
-      <div className="ui grid">
+      <div className="">
         <SideBar />
         <MovieList />
       </div>

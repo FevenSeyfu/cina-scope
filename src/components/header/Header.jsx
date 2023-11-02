@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM  from 'react-dom';
-import logo  from '../../Assets/images/logo_maroon.png'
+import logo  from '../../Assets/images/logo.png'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Header = () => {
@@ -11,29 +11,18 @@ const Header = () => {
           <img src={logo} alt="cineScope logo" className="logo" />
         </a>
       </div>
-      <nav className="navbar">
-        <ul>
-          <li>
-            <a class="item">
-              Trending
-              <i class="fire large icon"></i>
-            </a>
-          </li>
-          <li>
-            <a class="item">
-              Movies
-              <i class="film large icon"></i>
-            </a>
-          </li>
-          <li>
-            <a class="item">
-              Tv Series
-              <i class="tv large icon"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="ui grid">
+        <div class="two wide column">
+          <div class="ui search">
+            <div class="ui icon input">
+              <input type="text" autoComplete="off" value="" placeholder="Search..." tabindex="0" class="prompt"/>
+                <i aria-hidden="true" class="search icon"></i>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div> 
+
   )
 }
 

@@ -23,11 +23,33 @@ button {
     width: 100%;
     top: 0;
     right: 0;
-    justify-content: center;
     align-items: center;
     background-color: var(--lighter-blue);
     overflow: hidden;
+    z-index: 1;
+    padding-bottom: 1rem;
 }
+
+.logo{
+    width: 80%;
+}
+
+/* style search bar */
+
+@media (max-width: 800px) {
+    .top-header {
+      flex-direction: column;
+    }
+}
+
+
+
+.main{
+    position: relative;
+    margin-top: 10%;
+}
+
+/* sidebar */
 
 .navbar ul {
     list-style-type: none;
@@ -45,10 +67,3 @@ button {
     padding: 1rem;
     color: var(--off-white); 
 }
-
-.main{
-    position: relative;
-    margin-top: 30%;
-}
-
-
