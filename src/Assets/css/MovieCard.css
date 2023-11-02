@@ -23,3 +23,7 @@
 .ui.card>.extra, .ui.cards>.card>.extra {
     color: var(--off-white);
 }
+
+.ui.pagination.pagination.menu{
+    margin: 2rem auto;
+}
