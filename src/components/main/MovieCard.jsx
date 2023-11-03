@@ -22,7 +22,7 @@ const MovieCard = ({movies, activePage, totalPages, handlePaginationChange }) =>
         <Pagination
           activePage={activePage}
           totalPages={totalPages}
-          onPageChange={()=>{console.log('clicked')}}
+          onPageChange={handlePaginationChange}
         />
         
   </>

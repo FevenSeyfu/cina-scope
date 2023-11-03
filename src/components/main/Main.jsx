@@ -17,9 +17,9 @@ const Main = () => {
       <Grid divided='vertically'>
         <Grid.Row columns={2}>
           <Grid.Column width={2}>
-            <SideBar />
+            {/* <SideBar /> */}
           </Grid.Column>
-          <Grid.Column width={14}>
+          <Grid.Column centeed width={13}>
             <Routes>
               <Route path="/" element={<MovieList />} exact />
               <Route path="/movies" element={<Movies /> } />
