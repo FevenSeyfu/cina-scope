@@ -10,22 +10,23 @@ const MovieList = () => {
   const [activePage, setActivePage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
-  useEffect(() => {
-    const apiKey = '37f9159ef25a3d939000ae37af4753b0';
+  const apiKey = '37f9159ef25a3d939000ae37af4753b0';
 
+  useEffect(() => {
     fetchTrendingMovies(apiKey,activePage,setMovies,setTotalPages);
   }, [activePage]);
-  
+
   const handlePaginationChange = (e, { activePage }) => {
     setActivePage(activePage);
   };
+
   return (
      <div>
           <MovieCard 
             movies = {movies}
             activePage={activePage}
             totalPages={totalPages}
-            onPageChange={handlePaginationChange}/>
+            handlePaginationChange={handlePaginationChange}/>
      </div>
   )
 }

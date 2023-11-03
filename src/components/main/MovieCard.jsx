@@ -1,7 +1,7 @@
 import '../../Assets/css/MovieCard.css'
 import { Rating,Card,Image,Pagination } from 'semantic-ui-react'
 
-const MovieCard = ({movies, activePage, totalPages, handlePaginationChange}) => {
+const MovieCard = ({movies, activePage, totalPages, handlePaginationChange }) => {
   return (
     <>
         <Card.Group itemsPerRow={4} className='ui centered stackable card-group'>
@@ -19,11 +19,10 @@ const MovieCard = ({movies, activePage, totalPages, handlePaginationChange}) => 
           </Card>
           ))}
         </Card.Group>
-          <Pagination
-            className="pagination"
-            activePage={activePage}
-            totalPages={totalPages}
-            onPageChange={handlePaginationChange}
+        <Pagination
+          activePage={activePage}
+          totalPages={totalPages}
+          onPageChange={()=>{console.log('clicked')}}
         />
         
   </>
