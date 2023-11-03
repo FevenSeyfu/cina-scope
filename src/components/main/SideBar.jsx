@@ -17,21 +17,25 @@ const SideBar = () => {
       width='thin'
       visible={visible}
     >
-      <Menu.Item as='a'>
-        <Icon name='film' />
-        Movies
-      </Menu.Item>
-      <Menu.Item as='a'>
+      <Menu.Item as='a' href='/'>
         <Icon name='fire' />
         Trending
       </Menu.Item>
-      <Menu.Item as='a'>
+      <Menu.Item as='a' href='/movies'>
+        <Icon name='film' />
+        Movies
+      </Menu.Item>
+      <Menu.Item as='a' href='/TV'>
         <Icon name='tv' />
         TV Series
       </Menu.Item>
+      <Menu.Item as='a' href='/search'>
+        <Icon name='search' />
+        Search
+      </Menu.Item>
     </Sidebar>
 
-    <Sidebar.Pusher dimmed={visible}>
+    <Sidebar.Pusher >
         <Icon onClick={() => setVisible(!visible)} bordered inverted name='sidebar' size='large' color='black' />
     </Sidebar.Pusher>
   </Sidebar.Pushable>
