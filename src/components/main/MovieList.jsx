@@ -1,23 +1,31 @@
-import React from 'react'
+import React,{useState,useEffect} from "react";
+
 import MovieCard from './MovieCard'
+import fetchTrendingMovies from '../../API/fetchTrendingMovies'
+
 import '../../Assets/css/MovieCard.css'
-import {Card,Pagination } from 'semantic-ui-react'
+
 const MovieList = () => {
+  const [movies, setMovies] = useState([]);
+  const [activePage, setActivePage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+
+  useEffect(() => {
+    const apiKey = '37f9159ef25a3d939000ae37af4753b0';
+
+    fetchTrendingMovies(apiKey,activePage,setMovies,setTotalPages);
+  }, [activePage]);
+  
+  const handlePaginationChange = (e, { activePage }) => {
+    setActivePage(activePage);
+  };
   return (
      <div>
-        <Card.Group itemsPerRow={4} className='ui centered stackable card-group'>
-          <MovieCard />
-        </Card.Group>
-        <Pagination 
-          className="pagination"
-          boundaryRange={0}
-          defaultActivePage={1}
-          ellipsisItem={null}
-          firstItem={null}
-          lastItem={null}
-          siblingRange={1}
-          totalPages={5}
-      />
+          <MovieCard 
+            movies = {movies}
+            activePage={activePage}
+            totalPages={totalPages}
+            onPageChange={handlePaginationChange}/>
      </div>
   )
 }
