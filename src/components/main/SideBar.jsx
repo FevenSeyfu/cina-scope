@@ -1,23 +1,44 @@
 import React from 'react'
-import Filter from './Filter'
+// import Filter from './Filter'
+import { Icon, Menu, Sidebar,Container } from 'semantic-ui-react';
+import '../../Assets/css/SideBar.css'
 
 const SideBar = () => {
+  const [visible, setVisible] = React.useState(false)
   return (
-    <div className='ui visible left four wide sidebar'>
-      {/* <Filter /> */}
-        <a class="item">
-            Trending
-            <i class="fire large icon"></i>
-        </a>
-        <a class="item">
-           Movies
-           <i class="film large icon"></i>
-        </a>
-        <a class="item">
-            Tv Series
-            <i class="tv large icon"></i>
-        </a>
-    </div>
+    <Sidebar.Pushable as={Container} className='Sidebar'>
+    <Sidebar
+      as={Menu}
+      animation='push'
+      icon='labeled'
+      inverted
+      onHide={() => setVisible(false)}
+      vertical
+      width='thin'
+      visible={visible}
+    >
+      <Menu.Item as='a' href='/'>
+        <Icon name='fire' />
+        Trending
+      </Menu.Item>
+      <Menu.Item as='a' href='/movies'>
+        <Icon name='film' />
+        Movies
+      </Menu.Item>
+      <Menu.Item as='a' href='/TV'>
+        <Icon name='tv' />
+        TV Series
+      </Menu.Item>
+      <Menu.Item as='a' href='/search'>
+        <Icon name='search' />
+        Search
+      </Menu.Item>
+    </Sidebar>
+
+    <Sidebar.Pusher >
+        <Icon onClick={() => setVisible(!visible)} bordered inverted name='sidebar' size='large' color='black' />
+    </Sidebar.Pusher>
+  </Sidebar.Pushable>
   )
 }
 
