@@ -4,12 +4,15 @@ import { Rating,Card,Image,Pagination } from 'semantic-ui-react'
 const cardStyle = {
   borderRadius: '1rem', 
 };
+const cardGroupStyle = {
+  marginTop: '10rem', 
+};
 
 const MovieCard = ({HeaderTop,movies, activePage, totalPages, handlePaginationChange }) => {
   return (
-    <>
+    <div style={cardGroupStyle}>
         <HeaderTop />
-        <Card.Group itemsPerRow={4} className='ui stackable card-group'>
+        <Card.Group itemsPerRow={4} className='ui centered stackable'>
         {movies.map((movie) => (
           <Card className='movie-card centered' key={movie.id} style={cardStyle}>
             <Image src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} wrapped ui={false} />
@@ -27,8 +30,7 @@ const MovieCard = ({HeaderTop,movies, activePage, totalPages, handlePaginationCh
           totalPages={totalPages}
           onPageChange={handlePaginationChange}
         />
-        
-  </>
+  </div>
   )
 }
 

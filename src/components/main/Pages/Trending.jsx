@@ -19,15 +19,21 @@ const Trending = () => {
     setActivePage(activePage);
   };
 
+  const headerStyle = {
+    display:'flex',
+    flexDirection: 'row',
+    justifyContent:'center',
+    color:'#F5F5F5' ,
+    padding: '0.3rem 0'
+  };
+
   const HeaderTop = () => {
     return(
-      <div>
-        <Header as='h1'>
-          <Icon color='orange' name='fire' />
+        <Header as='h1' style={headerStyle}>
+          <Icon color='red' name='fire' />
           This weeks Trending Movies
-          <Icon color='orange' name='fire' />
+          <Icon color='red' name='fire' />
         </Header>
-      </div>
     )
   }
 

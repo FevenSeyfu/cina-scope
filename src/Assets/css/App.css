@@ -21,9 +21,11 @@ button {
     display: flex;
     position: fixed;
     width: 100%;
+    height: 8rem;
     top: 0;
     right: 0;
     align-items: center;
+    justify-content: flex-start;
     background-color: var(--lighter-blue);
     overflow: hidden;
     z-index: 2;
@@ -38,7 +40,10 @@ button {
 
 @media (max-width: 800px) {
     .top-header {
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 10rem;
     }
 }
 
