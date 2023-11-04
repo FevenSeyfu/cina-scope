@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import MovieCard from '../../main/MovieCard'
-import  fetchTrendingMovies from '../../../API/fetchTrendingMovies'
+import  fetchData from '../../../API/fetchData'
 import { Header,Icon } from 'semantic-ui-react'
 
 
@@ -10,9 +10,10 @@ const Trending = () => {
   const [totalPages, setTotalPages] = useState(1);
 
   const apiKey = '37f9159ef25a3d939000ae37af4753b0';
+  const apiURL=`https://api.themoviedb.org/3/trending/movie/week?api_key=${apiKey}&page=${activePage}`
  
   useEffect(() => {
-    fetchTrendingMovies(apiKey,activePage,setMovies,setTotalPages);
+    fetchData(apiURL,setMovies,setTotalPages);
   }, [activePage]);
 
   const handlePaginationChange = (e, { activePage }) => {
