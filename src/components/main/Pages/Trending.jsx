@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import MovieCard from '../../main/MovieCard'
 import  fetchTrendingMovies from '../../../API/fetchTrendingMovies'
+import { Header,Icon } from 'semantic-ui-react'
 
 
 const Trending = () => {
@@ -18,9 +19,22 @@ const Trending = () => {
     setActivePage(activePage);
   };
 
+  const HeaderTop = () => {
+    return(
+      <div>
+        <Header as='h1'>
+          <Icon color='orange' name='fire' />
+          This weeks Trending Movies
+          <Icon color='orange' name='fire' />
+        </Header>
+      </div>
+    )
+  }
+
   return (
      <div>
           <MovieCard 
+            HeaderTop = {HeaderTop}
             movies = {movies}
             activePage={activePage}
             totalPages={totalPages}

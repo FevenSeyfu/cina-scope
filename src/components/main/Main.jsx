@@ -13,12 +13,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const Main = () => {
   return (
     <BrowserRouter>
-      <Grid divided='vertically'>
-        <Grid.Row columns={2}>
-          <Grid.Column width={2}>
-            {/* <SideBar /> */}
-          </Grid.Column>
-          <Grid.Column centeed width={13}>
+      <Grid centered>
+          <Grid.Column width={14}>
             <Routes>
               <Route path="/" element={<Trending />} exact />
               <Route path="/movies" element={<Movies /> } />
@@ -27,7 +23,6 @@ const Main = () => {
               <Route path="*" element={<Error />} /> 
             </Routes>
           </Grid.Column>
-        </Grid.Row>
       </Grid>
     </BrowserRouter>
   )
