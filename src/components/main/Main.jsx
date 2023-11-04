@@ -1,7 +1,6 @@
 import React from 'react'
-import MovieList from './MovieList'
 
-// import Trending from './Pages/Trending'
+import Trending from './Pages/Trending'
 import Movies from './Pages/Movies'
 import Search from './Pages/Search'
 import Error from './Pages/Error'
@@ -21,7 +20,7 @@ const Main = () => {
           </Grid.Column>
           <Grid.Column centeed width={13}>
             <Routes>
-              <Route path="/" element={<MovieList />} exact />
+              <Route path="/" element={<Trending />} exact />
               <Route path="/movies" element={<Movies /> } />
               <Route path="/tv" element={<TV />} /> 
               <Route path="/search" element={<Search />} /> 
