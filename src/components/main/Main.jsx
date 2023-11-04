@@ -10,6 +10,10 @@ import SideBar from './SideBar'
 import { Grid } from 'semantic-ui-react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+const SearchResults = () => {
+  return <div>Search Results</div>; 
+};
+
 const Main = () => {
   return (
     <BrowserRouter>
@@ -19,7 +23,7 @@ const Main = () => {
               <Route path="/" element={<Trending />} exact />
               <Route path="/movies" element={<Movies /> } />
               <Route path="/tv" element={<TV />} /> 
-              <Route path="/search" element={<Search />} /> 
+              <Route path="/search" element={<Search/>} /> 
               <Route path="*" element={<Error />} /> 
             </Routes>
           </Grid.Column>

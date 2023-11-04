@@ -4,7 +4,7 @@ import  fetchData from '../../../API/fetchData'
 import { Header,Icon } from 'semantic-ui-react'
 
 
-const Trending = () => {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [activePage, setActivePage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -54,4 +54,4 @@ const Trending = () => {
   )
 }
 
-export default Trending
+export default Movies

@@ -1,9 +1,18 @@
-import React from 'react'
-import ReactDOM  from 'react-dom';
+import React,{useState} from 'react'
 import logo  from '../../Assets/images/logo.png'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Search from '../main/Pages/Search';
 
 const Header = () => {
+  const [searchValue, setSearchValue] = useState('');
+
+  const HandleSearchChange = (e) => {
+    setSearchValue(e.target.value)
+  }
+  
+  const handleSearchSubmit = (e) => {
+    <Search  searchValue={searchValue}/>
+  }
+
   return (
     <div className='top-header'>
       <div className="logo-container">
@@ -14,10 +23,10 @@ const Header = () => {
       <div class="ui grid">
         <div class="two wide column">
           <div class="ui search">
-            <div class="ui icon input">
-              <input type="text" autoComplete="off" value="" placeholder="Search..." tabindex="0" class="prompt"/>
+            <form class="ui icon input" onSubmit={handleSearchSubmit}>
+              <input type="text" autoComplete="off" value={searchValue} placeholder="Search..." onChange={HandleSearchChange} tabindex="0" class="prompt"/>
                 <i aria-hidden="true" class="search icon"></i>
-            </div>
+            </form>
           </div>
         </div>
      </div>
