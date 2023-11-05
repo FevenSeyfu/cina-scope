@@ -5,7 +5,7 @@ import Movies from './Pages/Movies'
 import Search from './Pages/Search'
 import Error from './Pages/Error'
 import TV from './Pages/TV'
-
+import Movie from './Movie'
 import SideBar from './SideBar'
 import { Grid } from 'semantic-ui-react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -22,6 +22,7 @@ const Main = () => {
             <Routes>
               <Route path="/" element={<Trending />} exact />
               <Route path="/movies" element={<Movies /> } />
+              <Route path="/Detail" element={<Movie /> } />
               <Route path="/tv" element={<TV />} /> 
               <Route path="/search" element={<Search/>} /> 
               <Route path="*" element={<Error />} /> 

@@ -3,7 +3,6 @@ import MovieCard from '../../main/MovieCard'
 import  fetchData from '../../../API/fetchData'
 import { Header,Icon } from 'semantic-ui-react'
 
-
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [activePage, setActivePage] = useState(1);
