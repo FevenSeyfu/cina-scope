@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import '../../Assets/css/MovieCard.css'
 import { Rating,Card,Image,Pagination } from 'semantic-ui-react'
-import Movie from './Movie';
+import MovieDetail from './MovieDetail';
 
 const cardStyle = {
   borderRadius: '1rem', 
@@ -8,18 +9,21 @@ const cardStyle = {
 const cardGroupStyle = {
   marginTop: '10rem', 
 };
-{/* <Movie movie={movie}/> */}
+
 
 
 const MovieCard = ({HeaderTop,movies, activePage, totalPages, handlePaginationChange }) => {
-  const handleOnClick = (e) => {
-    // console.log('clicked')
-    return(
-      <Movie />
-    )
+  const [selectedMovie, setSelectedMovie] = useState(null);
+
+  const handleMovieClick = (movie) => {
+    setSelectedMovie(movie);
   }
   return (
-    <div style={cardGroupStyle}>
+    <>
+      { selectedMovie ? (
+        <MovieDetail movie={selectedMovie} />
+      ) : (
+      <div style={cardGroupStyle}>
         <HeaderTop />
         <Card.Group itemsPerRow={4} className='ui centered stackable'>
         {movies.map((movie) => (
@@ -27,7 +31,7 @@ const MovieCard = ({HeaderTop,movies, activePage, totalPages, handlePaginationCh
             className='movie-card centered' 
             key={movie.id} 
             style={cardStyle} 
-            onClick= {(e)=>handleOnClick(e)}>
+            onClick= {()=>handleMovieClick(movie)}>
 
             <Image src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} wrapped ui={false} />
             <Card.Content className='card-content'>
@@ -44,7 +48,8 @@ const MovieCard = ({HeaderTop,movies, activePage, totalPages, handlePaginationCh
           totalPages={totalPages}
           onPageChange={handlePaginationChange}
         />
-  </div>
+      </div>)}
+    </>
   )
 }
 
