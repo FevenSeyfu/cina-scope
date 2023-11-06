@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Trending from './Pages/Trending'
-import Movies from './Pages/Movies'
-import Search from './Pages/Search'
-import Error from './Pages/Error'
-import TV from './Pages/TV'
+import Trending from './Pages/Trending.jsx'
+import Movies from './Pages/Movies.jsx'
+import Search from './Pages/Search.jsx'
+import Error from './Pages/Error.jsx'
+import TV from './Pages/TV.jsx'
 import { Grid } from 'semantic-ui-react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
