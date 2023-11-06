@@ -1,7 +1,7 @@
 <div align="center">
 
   <h3><b>CineScope 🎬</b></h3>
-  ![CineScope Demo](./src/Assets//images/Cinescope-demp.png)
+  ![CineScope Demo](https://github.com/FevenSeyfu/cina-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
 
 </div>
 
