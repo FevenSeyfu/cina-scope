@@ -15,27 +15,32 @@ const Search = () => {
     setSearchQuery(event.target.value);
 
   };
-
-  
+  const headerStyle = {
+    display:'flex',
+    flexDirection: 'row',
+    justifyContent:'center',
+    padding: '0.3rem 0'
+  };
   const HeaderTop = () => {
     return(
-      <div class="ui search">
-      <form class="ui icon input" >
-        <input type="text" 
-              autoComplete="off" 
-              placeholder="Search..." 
-              value={searchQuery}
-              onChange={handleSearchChange}
-              tabindex="0" 
-              class="prompt"/>
-          <i aria-hidden="true" class="search icon"></i>
-      </form>
+      <div class="ui search" style={headerStyle}>
+        <form class="ui icon input"  >
+          <input type="text" 
+                autoComplete="off" 
+                placeholder="Search..." 
+                value={searchQuery}
+                onChange={handleSearchChange}
+                tabindex="0" 
+                class="prompt"/>
+            <i aria-hidden="true" class="search icon"></i>
+        </form>
       
     </div>
     )
   }
   return (
-     <div> <MovieSearch searchQuery={searchQuery} setMovies={setMovies} />
+     <div> 
+        <MovieSearch searchQuery={searchQuery} setMovies={setMovies} activePage={activePage}/>
           <MovieCard 
             movies = {movies}
             activePage={activePage}

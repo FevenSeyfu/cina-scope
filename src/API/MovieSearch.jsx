@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const MovieSearch = ({ searchQuery, setMovies }) => {
+const MovieSearch = ({ activePage,searchQuery, setMovies }) => {
     
   useEffect(() => {
     const fetchData = async () => {
@@ -19,7 +19,7 @@ const MovieSearch = ({ searchQuery, setMovies }) => {
     if (searchQuery) {
       fetchData();
     }
-  }, [searchQuery, setMovies]);
+  }, [searchQuery, setMovies,activePage]);
 
   return null; 
 };
