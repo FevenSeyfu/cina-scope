@@ -3,7 +3,6 @@ import Header from './header/Header';
 import Main from './main/Main';
 import Footer from './footer/Footer';
 import '../Assets/css/App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <div>

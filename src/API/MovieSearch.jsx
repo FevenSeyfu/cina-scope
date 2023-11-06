@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 
-const MovieSearch = ({ activePage,searchQuery, setMovies }) => {
+const MovieSearch = ({ activePage,searchQuery, setMovies,setTotalPages }) => {
     
   useEffect(() => {
     const fetchData = async () => {
@@ -11,6 +11,7 @@ const MovieSearch = ({ activePage,searchQuery, setMovies }) => {
  
         const response = await axios.get(apiURL);
         setMovies(response.data.results);
+        setTotalPages(response.data.total_pages);
       } catch (error) {
         console.error('Error fetching data:', error);
       }

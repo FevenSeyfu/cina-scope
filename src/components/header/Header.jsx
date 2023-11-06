@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className='top-header'>
       <div className="logo-container">
-        <a href="#">
+        <a href="/">
           <img src={logo} alt="cineScope logo" className="logo" />
         </a>
       </div>

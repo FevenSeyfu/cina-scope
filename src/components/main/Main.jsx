@@ -8,10 +8,6 @@ import TV from './Pages/TV'
 import { Grid } from 'semantic-ui-react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const SearchResults = () => {
-  return <div>Search Results</div>; 
-};
-
 const Main = () => {
   return (
     <BrowserRouter>

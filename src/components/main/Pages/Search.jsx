@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import MovieCard from '../../main/MovieCard'
 import  MovieSearch from '../../../API/MovieSearch'
 
@@ -40,7 +40,7 @@ const Search = () => {
   }
   return (
      <div> 
-        <MovieSearch searchQuery={searchQuery} setMovies={setMovies} activePage={activePage}/>
+        <MovieSearch searchQuery={searchQuery} setMovies={setMovies} activePage={activePage} setTotalPages={setTotalPages}/>
           <MovieCard 
             movies = {movies}
             activePage={activePage}
