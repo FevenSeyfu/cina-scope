@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #39414A; /* Dark Blue */
+    --accent-color: #800000; /* Maroon */
+    --light-gray: #CCCCCC;
+    --off-white: #F5F5F5;
+    --lighter-blue: #3A506B;
+}
+
+.movie-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10rem auto;
+    height: 50%;
+    
+}
+
+.movie-img{
+    margin-right: 2rem;
+}
+
+.movie-detail{
+    color: var(--light-gray);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: var(--lighter-blue);
+    padding: 2rem 0 0 2rem;
+}
+
