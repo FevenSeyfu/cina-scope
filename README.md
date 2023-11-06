@@ -4,7 +4,6 @@
  
 
 </div>
- ![CineScope Demo](https://github.com/FevenSeyfu/cine-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
 
 # 📗 Table of Contents
 - [📖 About the Project](#CineScope)
@@ -20,6 +19,7 @@
 # CineScope 🎬
 
 CineScope is a movie listing web application that allows users to explore and discover a vast collection of films. The app offers an intuitive interface and various features for effortless movie browsing and information retrieval.
+![CineScope Demo](https://github.com/FevenSeyfu/cine-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
 
 ## Features
 
