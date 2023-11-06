@@ -6,7 +6,7 @@ import '../../Assets/css/SideBar.css'
 const SideBar = () => {
   const [visible, setVisible] = React.useState(false)
   return (
-    <Sidebar.Pushable as={Container} className='Sidebar'>
+    <Sidebar.Pushable  className='Sidebar'>
     <Sidebar
       as={Menu}
       animation='push'
