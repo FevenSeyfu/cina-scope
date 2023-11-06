@@ -8,11 +8,6 @@
 
 .footer {
     display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 10%;
     background-color: var(--lighter-blue);
     color: var(--lighter-gray);
     justify-content: center;

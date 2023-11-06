@@ -19,7 +19,7 @@ const Search = () => {
     display:'flex',
     flexDirection: 'row',
     justifyContent:'center',
-    padding: '0.3rem 0'
+    padding: '1rem 0 2rem'
   };
   const HeaderTop = () => {
     return(
