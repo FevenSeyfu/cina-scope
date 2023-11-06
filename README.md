@@ -1,6 +1,7 @@
 <div align="center">
 
   <h3><b>CineScope 🎬</b></h3>
+  ![CineScope Demo](./src/Assets//images/Cinescope-demp.png)
 
 </div>
 
