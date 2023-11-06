@@ -20,7 +20,7 @@ const MovieSearch = ({ activePage,searchQuery, setMovies,setTotalPages }) => {
     if (searchQuery) {
       fetchData();
     }
-  }, [searchQuery, setMovies,activePage]);
+  }, [searchQuery, setMovies,activePage,setTotalPages]);
 
   return null; 
 };

@@ -17,7 +17,7 @@ const Movies = () => {
  
   useEffect(() => {
     fetchData(apiURL,setMovies,setTotalPages);
-  }, [activePage]);
+  }, [activePage,apiURL]);
 
   const handlePaginationChange = (e, { activePage }) => {
     setActivePage(activePage);
