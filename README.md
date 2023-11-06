@@ -4,7 +4,7 @@
  
 
 </div>
- ![CineScope Demo](https://github.com/FevenSeyfu/cina-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
+ ![CineScope Demo](https://github.com/FevenSeyfu/cine-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
 
 # 📗 Table of Contents
 - [📖 About the Project](#CineScope)
