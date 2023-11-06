@@ -1,9 +1,10 @@
 <div align="center">
 
   <h3><b>CineScope 🎬</b></h3>
-  ![CineScope Demo](https://github.com/FevenSeyfu/cina-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
+ 
 
 </div>
+ ![CineScope Demo](https://github.com/FevenSeyfu/cina-scope/blob/dev/src/Assets/images/Cinescope-demp.png)
 
 # 📗 Table of Contents
 - [📖 About the Project](#CineScope)
