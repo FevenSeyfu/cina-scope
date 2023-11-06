@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #39414A; /* Dark Blue */
+    --accent-color: #80000; /* Maroon */
+    --light-gray: #CCCCCC;
+    --off-white: #F5F5F5;
+    --lighter-blue: #3A506B;
+}
+
+.footer {
+    display: flex;
+    background-color: var(--lighter-blue);
+    color: var(--lighter-gray);
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    font-size: large;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-evenly;
+}

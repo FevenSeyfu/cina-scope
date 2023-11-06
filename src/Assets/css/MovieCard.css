@@ -1,0 +1,34 @@
+:root {
+    --primary-color: #39414A; /* Dark Blue */
+    --accent-color: #800000; /* Maroon */
+    --light-gray: #CCCCCC;
+    --off-white: #F5F5F5;
+    --lighter-blue: #3A506B;
+}
+
+
+.ui.four.cards>.card  {
+    margin:0.5rem ;
+    background-color: var(--lighter-blue);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ui.four.cards>.card:hover{
+    background-color: var(--lighter-blue);
+}
+.ui.card>.content, .ui.cards>.card>.content .ui.card>.content>.header, .ui.cards>.card>.content>.header {
+    color: var(--off-white);
+}
+
+.ui.card .meta, .ui.cards>.card .meta {
+    color: var(--off-white);
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra {
+    color: var(--off-white);
+}
+
+.ui.pagination.pagination.menu{
+    margin: 2rem 40%;
+
+}
